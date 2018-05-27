@@ -1,9 +1,9 @@
 {
-  "name": "react-apollo",
-  "version": "2.1.4",
+  "name": "preact-apollo",
+  "version": "0.0.1",
   "author": "opensource@apollographql.com",
   "browser": "lib/react-apollo.browser.umd.js",
-  "description": "React data container for Apollo Client",
+  "description": "Apollo Client with small fix for preact",
   "keywords": [
     "apollo",
     "graphql",
