@@ -14,10 +14,12 @@ const ApolloConsumer: React.StatelessComponent<ApolloConsumerProps> = (props, co
     `Could not find "client" in the context of ApolloConsumer. Wrap the root component in an <ApolloProvider>`,
   );
 
-  return Array.isArray(props.children)
-    ? // @ts-ignore: Unreachable code error
-      props.children[0](context.client)
-    : props.children(context.client);
+  if (Array.isArray(props.children)) {
+    // @ts-ignore: Unreachable code error
+    return props.children[0](context.client);
+  }
+
+  return props.children(context.client);
 };
 
 ApolloConsumer.contextTypes = {
