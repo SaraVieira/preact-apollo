@@ -1,5 +1,5 @@
 {
-  "name": "preact-apollo",
+  "name": "preact-apollo-fix",
   "version": "0.0.1",
   "author": "opensource@apollographql.com",
   "browser": "lib/react-apollo.browser.umd.js",
